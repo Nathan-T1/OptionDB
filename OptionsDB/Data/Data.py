@@ -410,7 +410,7 @@ def ExportCustomPull(ticker, days, strikes, expirations):
     string = str(ticker) + ".csv"
     df.to_csv(string)
     print("CSV exported to root directory")
-ExportCustomPull('AAPL', '0', '200', '2019-07-26')
+
 
 def mesh(df,target,dates):
 

@@ -5,8 +5,8 @@ from PyQt5.QtCore import QRect
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
-sys.path.append(r'\UI')
-sys.path.append(r'\Data')
+sys.path.append(r'')
+sys.path.append(r'')
 
 
 from Main import Ui_Form as Main_Ui_Form
