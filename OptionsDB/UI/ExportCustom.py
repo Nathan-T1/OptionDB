@@ -1,0 +1,98 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ExportCustome.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(548, 430)
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(20, 10, 111, 16))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setGeometry(QtCore.QRect(40, 50, 47, 21))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.lineEdit = QtWidgets.QLineEdit(Form)
+        self.lineEdit.setGeometry(QtCore.QRect(90, 50, 161, 20))
+        self.lineEdit.setObjectName("lineEdit")
+        self.label_3 = QtWidgets.QLabel(Form)
+        self.label_3.setGeometry(QtCore.QRect(40, 90, 47, 13))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.lineEdit_2 = QtWidgets.QLineEdit(Form)
+        self.lineEdit_2.setGeometry(QtCore.QRect(90, 90, 161, 20))
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.label_4 = QtWidgets.QLabel(Form)
+        self.label_4.setGeometry(QtCore.QRect(90, 110, 141, 16))
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(Form)
+        self.label_5.setGeometry(QtCore.QRect(40, 150, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.lineEdit_3 = QtWidgets.QLineEdit(Form)
+        self.lineEdit_3.setGeometry(QtCore.QRect(100, 150, 151, 20))
+        self.lineEdit_3.setObjectName("lineEdit_3")
+        self.label_6 = QtWidgets.QLabel(Form)
+        self.label_6.setGeometry(QtCore.QRect(90, 180, 141, 16))
+        self.label_6.setObjectName("label_6")
+        self.label_7 = QtWidgets.QLabel(Form)
+        self.label_7.setGeometry(QtCore.QRect(90, 200, 141, 16))
+        self.label_7.setObjectName("label_7")
+        self.label_8 = QtWidgets.QLabel(Form)
+        self.label_8.setGeometry(QtCore.QRect(40, 230, 81, 16))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_8.setFont(font)
+        self.label_8.setObjectName("label_8")
+        self.lineEdit_4 = QtWidgets.QLineEdit(Form)
+        self.lineEdit_4.setGeometry(QtCore.QRect(120, 230, 131, 20))
+        self.lineEdit_4.setObjectName("lineEdit_4")
+        self.label_9 = QtWidgets.QLabel(Form)
+        self.label_9.setGeometry(QtCore.QRect(90, 260, 141, 16))
+        self.label_9.setObjectName("label_9")
+        self.label_10 = QtWidgets.QLabel(Form)
+        self.label_10.setGeometry(QtCore.QRect(90, 280, 161, 16))
+        self.label_10.setObjectName("label_10")
+        self.pushButton = QtWidgets.QPushButton(Form)
+        self.pushButton.setGeometry(QtCore.QRect(180, 300, 75, 23))
+        self.pushButton.setObjectName("pushButton")
+        self.label_11 = QtWidgets.QLabel(Form)
+        self.label_11.setGeometry(QtCore.QRect(90, 130, 121, 16))
+        self.label_11.setObjectName("label_11")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.label.setText(_translate("Form", "Export Custom"))
+        self.label_2.setText(_translate("Form", "Ticker:"))
+        self.label_3.setText(_translate("Form", "Day(s):"))
+        self.label_4.setText(_translate("Form", "ex: 2019-07-15, 2019-07-16"))
+        self.label_5.setText(_translate("Form", "Strike(s):"))
+        self.label_6.setText(_translate("Form", "ex: 200, 205, 210"))
+        self.label_7.setText(_translate("Form", "Enter 0 for all"))
+        self.label_8.setText(_translate("Form", "Expiration(s):"))
+        self.label_9.setText(_translate("Form", "ex: 2020-01-10, 2020-01-17"))
+        self.label_10.setText(_translate("Form", "Enter 0 for all"))
+        self.pushButton.setText(_translate("Form", "Submit"))
+        self.label_11.setText(_translate("Form", "Enter 0 for all"))
