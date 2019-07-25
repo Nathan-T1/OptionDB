@@ -234,7 +234,7 @@ def get_quote(key,ticker):
     return quote 
       
 def Single_Pull(ticker, csv, sql):
-    
+    print('Pulling data for' + str(ticker))
     engine = create_engine('sqlite:///C:\\OptionDB\\MAIN.db', echo = True)
     conn = engine.connect()
 
@@ -262,7 +262,6 @@ def Single_Pull(ticker, csv, sql):
         frames = [main_df, df]
         main_df = pd.concat(frames)
         
-    print(main_df)
     
     if sql == 'yes':
         if ticker in list_tables:
@@ -384,6 +383,7 @@ def ExportCustomPull(ticker, days, strikes, expirations):
     engine = create_engine('sqlite:///C:\\OptionDB\\MAIN.db', echo = True)
     conn = engine.connect()
 
+        
     if days == '0' and strikes == '0' and expirations == '0':
                                  
             statement = '''SELECT * FROM {}'''.format(ticker)
@@ -400,7 +400,7 @@ def ExportCustomPull(ticker, days, strikes, expirations):
                       
             statement = '''SELECT * FROM {} WHERE strike IN {} and
                         expiration IN {} '''.format(ticker, strike_string, expiration_string)
-
+`
                 
                         
                          
