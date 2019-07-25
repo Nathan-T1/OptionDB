@@ -400,7 +400,7 @@ def ExportCustomPull(ticker, days, strikes, expirations):
                       
             statement = '''SELECT * FROM {} WHERE strike IN {} and
                         expiration IN {} '''.format(ticker, strike_string, expiration_string)
-`
+
                 
                         
                          
