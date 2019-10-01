@@ -5,8 +5,6 @@ from PyQt5.QtCore import QRect
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
-sys.path.append(r'')
-sys.path.append(r'')
 
 
 from Main import Ui_Form as Main_Ui_Form
@@ -144,10 +142,18 @@ class UpdateDatabase(QDialog, UpdateDatabase_Ui_Form):
         
         engine = create_engine('sqlite:///C:\\OptionDB\\MAIN.db')
         conn = engine.connect()
-        
-        meta = MetaData(engine,reflect=True)
-        table = meta.tables['DB_List']
-        my_select = select([table])
+
+        try:
+            meta = MetaData(engine,reflect=True)
+            table = meta.tables['DB_List']
+            my_select = select([table])
+        except:
+            meta = MetaData(engine,reflect=True)
+            DB_List = Table(
+           'DB_List', meta, 
+           Column('Ticker', String, primary_key = True), 
+        )
+            meta.create_all(engine)
 
         res = conn.execute(my_select)
         tickers = []
