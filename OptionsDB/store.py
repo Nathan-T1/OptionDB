@@ -74,7 +74,7 @@ def main(db_path, key):
 
                 except:
              
-                    api_key = "Q3Y60U32XTGAR2N8"
+                    api_key = "Alpha Vantage Key 2"
                     ts = TimeSeries(key = api_key, output_format = 'pandas')
                     data, meta_data = ts.get_intraday(symbol = ticker, interval = '5min', outputsize = extent)
                    
